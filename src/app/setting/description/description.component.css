@@ -1,0 +1,10 @@
+.progress{
+  width: 70px;
+  height: 7px;
+  margin-top: 10px;
+
+}
+.list-footer{
+  display: flex;
+  flex-flow: row ;
+}

@@ -1,0 +1,49 @@
+
+
+ body {
+  font-size: 48px;
+}
+div {
+  font-family: 'Crimson Pro', serif;
+}
+body{
+  height: 100%;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
+.flex-container .nav{
+  height: 100vh;
+  background-color: blue;
+  color: black;
+
+}
+
+
+
+.nav-link.setting{
+  position: absolute;
+  top:50%;
+}
+
+
+@media only screen and (max-width: 760px) {
+  /* For mobile phones: */
+  .flex-container{
+    display:block;
+
+  }
+  .flex-container .nav{
+    height: max-content;
+  }
+  .flex-container .classWidthReset .nav.flex-column{
+    flex-direction: row !important;
+  }
+  .nav-link.setting{
+    position: absolute;
+    top:0;
+    left:70%
+  }
+
+}

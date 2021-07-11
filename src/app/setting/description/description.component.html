@@ -1,0 +1,65 @@
+
+
+<div
+class="tab-mainContant"
+id="description"
+role="tabpanel"
+aria-labelledby="home-tab"
+>
+<div class="row">
+  <div class="col-4">
+    Due Date
+    <div>{{ RequestModel.dueDate | date}}</div>
+  </div>
+  <div class="col-4">
+    Start Date
+    <div>{{ RequestModel.dueDate | date}}</div>
+  </div>
+  <div class="col-4">
+    Progress
+
+    <div class="list-footer">
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          [style]="'width:'+RequestModel.progress+'%'"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <span> &nbsp;{{RequestModel.progress}}/100</span>
+    </div>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-12">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+    fugiat eveniet, deleniti reprehenderit ab reiciendis nisi, debitis
+    optio blanditiis recusandae accusamus. Possimus eveniet nihil autem
+    ipsa repellendus recusandae nisi praesentium.
+  </div>
+</div>
+<hr />
+<ngx-datatable
+  style="box-shadow: none"
+  class="material"
+  [rows]="rows"
+  [columns]="columns"
+  [columnMode]="'force'"
+  [headerHeight]="50"
+  [footerHeight]="50"
+  rowHeight="auto"
+>
+</ngx-datatable>
+<img src="/assets/icon/plus.png" /><a
+  style="text-decoration: none"
+  class="addnewClass"
+  >Add New</a
+>
+
+<hr />
+<span>Attachments</span>
+</div>

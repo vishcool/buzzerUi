@@ -1,0 +1,19 @@
+
+<div class="container-center">
+  <div class="centeranimation">
+    <h6>Buzzer</h6>
+    <p>Welcome to Buzzer. Play with you friends
+<br>
+      Click <a href="javascript:void(0)" (click)="movetoGamePage()">here</a> to start
+    </p>
+  </div>
+</div>
+
+<div class="container" *ngIf="time < 0">
+  <div class="row">
+    <div class="col-6">
+      {{ time }}
+    </div>
+    <div class="col-6"></div>
+  </div>
+</div>

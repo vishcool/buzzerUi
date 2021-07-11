@@ -1,0 +1,121 @@
+
+/*ScrollBAr */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(84, 108, 214);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(84, 108, 214);
+}
+
+
+.flex-container{
+  display: flex;
+}
+.classWidthReset{
+  width: 5%;
+}
+.classPaddingRest{
+  padding-right: 0px;
+  padding-left: 0px;
+
+}
+
+.classPaddingRest .listallProject{
+  border-radius: unset;
+  overflow: auto;
+height :620px;
+
+}
+
+.list-group-item{
+  padding: 20px;
+
+}
+
+.projectBadge{
+  font-size: 15px;
+  font-weight: 600;
+  float: right;
+}
+.mainAreaContent{
+  height: 100vh;
+  padding-left: 10px;
+  border-left: 1px solid #85a2ce;
+
+}
+
+
+
+.list-group-item.active {
+  background-color: #85a2ce;
+  border-color: #5488d6;
+}
+
+.progress{
+  width: 70px;
+  height: 7px;
+  margin-top: 10px;
+
+}
+
+
+.list-footer{
+  display: flex;
+  flex-flow: row ;
+}
+.badge{
+  float: right;
+}
+.topFIlter{
+  position: relative;
+  left: 45%;
+}
+
+
+#myTab .nav-link.active{
+  border-color:white;
+
+  border-bottom: 0.5px solid grey;
+}
+
+
+
+.animation{
+  color: black;
+
+  animation: tabcontent;
+  animation-duration: 4s;
+}
+
+@keyframes tabcontent {
+
+from{visibility: hidden;
+color: white;}
+to{visibility: visible;
+color: black;}
+}
+
+
+@media only screen and (max-width: 760px) {
+  /* For mobile phones: */
+.mainAreaContent{
+  overflow: auto;
+}
+
+}

@@ -1,0 +1,44 @@
+
+.container-center{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.centeranimation {
+  position: absolute;
+  top: 25%;
+  border-radius: 50%;
+  box-shadow: 2px 10px 3px -3px #131212;
+  padding: 5%;
+  text-decoration: none;
+  border: 1px solid blue;
+  background-color: blue;
+  text-align: center;
+  animation-name: centeranimation;
+  animation-duration: 4s;
+  color: white;
+
+}
+
+.centeranimation a{
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+  font-style: italic;
+}
+
+@keyframes centeranimation {
+from{
+  clip-path: circle(23.3% at 100% 2%);
+  transform: rotateY(55deg);
+}
+to{
+  clip-path: circle(139.7% at 100% 2%);
+  transform: rotateX(10deg);
+
+}
+}
+
+
+
